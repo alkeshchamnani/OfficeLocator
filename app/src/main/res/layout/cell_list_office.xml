@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.alkesh.officelocator.dataProvider.network.models.dto.OfficeLocationModel" />
+
+
+    </data>
+
+    <RelativeLayout
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_list_result"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/llID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_centerVertical="true"
+                android:text="@{model.id}"
+                android:textColor="@color/textViewColor1"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/llID">
+
+            <TextView
+                android:id="@+id/tvOfficeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{model.office}"
+                android:textColor="@color/textViewColor1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvOfficeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOfficeName"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawableTint="@color/layoutBackgroundColor3"
+                android:text="@{model.loc}"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbarBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/toolbarStartIV"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_back"
+        android:clickable="true"
+        android:backgroundTint="@color/layoutBackgroundColor1"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/toolbarEndIv"
+        android:layout_toEndOf="@+id/toolbarStartIV"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/textViewColor2"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/toolbarEndIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_back"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible" />
+</RelativeLayout>

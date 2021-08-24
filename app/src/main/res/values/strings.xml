@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">OfficeLocator</string>
+
+
+    <!--ListOfficesActivity!-->
+    <string name="activity_list_offices_title">List Offices</string>
+
+    <!--OfficeDetailActivity!-->
+    <string name="activity_list_office_detail_title">Detail</string>
+    <string name="activity_list_office_detail_note">Tap Me to open in map</string>
+    <string name="activity_list_office_detail_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+
+
+
+    <!--LoadingDialog!-->
+    <string name="dialog_loading_please_wait">Please Wait</string>
 </resources>

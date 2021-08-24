@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseToolbarAttributes">
+        <attr name="title" />
+        <attr name="titleColor" format="integer" />
+        <attr name="tootlbarBackgroundColor" format="color" />
+        <attr name="tootlbarStartIcon" format="integer" />
+    </declare-styleable>
+</resources>
